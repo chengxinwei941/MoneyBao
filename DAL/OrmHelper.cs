@@ -12,6 +12,11 @@ namespace DAL
 {
     public class OrmHelper <T> where T:new()
     {
+        /// <summary>
+        /// 获取查询sql  cjx
+        /// </summary>
+        /// <param name="t"></param>
+        /// <returns></returns>
         private string GetSelectSql(T t)
         {
             Type type = typeof(T);
